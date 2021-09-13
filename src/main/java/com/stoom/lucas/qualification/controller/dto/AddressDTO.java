@@ -8,8 +8,10 @@ import com.stoom.lucas.qualification.entity.model.Address;
 import org.springframework.hateoas.RepresentationModel;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class AddressDTO extends RepresentationModel<AddressDTO>{
 
     private Long id;
